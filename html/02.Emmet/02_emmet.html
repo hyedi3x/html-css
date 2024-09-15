@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 자식노드 자동 완성 | div>ul>li & tab키 -->
+    <div>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+
+    <!-- 형제 노드 자동 완성 | div>ol+ul+div & tab키 -->
+    <div>
+      <ol></ol>
+      <ul></ul>
+      <div></div>
+    </div>
+
+    <!-- 반복 자동완성 | div>ul>li*3 & tab키 -->
+    <div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <!-- # 아이디 자동완성 | #아이디명 / span#아이디명 -->
+    <span id="item"></span>
+    <div id="item"></div>
+
+    <!-- . 클래스 자동완성 | .클래스명 / span.클래스명 -->
+    <span class="title"></span>
+    <div class="title"></div>
+
+    <!-- {} 텍스트 자동완성 | 태그.클래스명{텍스트} - tab키 / 태그#아이디명{텍스트} - tab키 -->
+    <p class="container">Hello World~!</p>
+    <p id="font">Hello World~!</p>
+  </body>
+</html>
