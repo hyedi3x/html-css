@@ -19,14 +19,14 @@
 ```html
 <hr />
 ```
-![alt text](img\image-1.png)
+![alt text](img/image-1.png)
 <br>
 
 ⚙️ `<p>~</p>` : Paragraph, **하나의 문단**을 표시할 때 사용한다. 
 ```html
 <p>김치볶음밥의 정의</p>
 ```
-![alt text](img\image-2.png)
+![alt text](img/image-2.png)
 <br>
 
 ⚙️ `<br>` : Break, **줄바꿈 태그**로 html에서 개행 역할을 한다. (종료태그 X) <br>
@@ -42,7 +42,7 @@
     김치와 밥을 볶는 것이 기본인 자취생들의 친구 메뉴이다.
 </p>
 ```
-![alt text](img\image-3.png)
+![alt text](img/image-3.png)
 
 ---
 <br>
