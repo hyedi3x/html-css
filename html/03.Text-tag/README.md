@@ -12,7 +12,7 @@
 <h5>제목5</h5>
 <h6>제목6</h6>
 ```
-![alt text](img\image.png)
+![alt text](img/image.png)
 <br>
 
 ⚙️ `<hr>` : Horizontal Rule, 가로로 수평선을 긋는 태그. (종료태그 X)
