@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Form Input2</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend> 날짜 관련 </legend>
+            <ul>
+                <li>
+                    <!-- type="date" : 날짜를 선택할 수 있는 입력 필드를 정의 -->
+                    <!-- 최소값, 최댓값 지정 가능 (min, max 속성) | 지정 날짜 외 날짜 비활성화 처리 -->
+                    <label for="date">date : </label>
+                    <input type="date" id="date" min="2024-09-05" max="2024-09-18" />
+                </li>
+                <li>
+                    <!-- type="month" : 날짜를 선택할 수 있는 입력 필드를 정의 (year, month) -->
+                    <!-- 최소값, 최댓값 지정 가능 (min, max 속성) | 지정 달 외 비활성화 처리 -->
+                    <label for="month">month : </label>
+                    <input type="month" id="month" min="2024-08" max="2024-09" />
+                </li>
+                <li>
+                    <!-- type="week" : 날짜를 선택할 수 있는 입력 필드를 정의 (year, week) | 현재 몇번째 주 인지 확인 -->
+                    <label for="week">week : </label>
+                    <input type="week" id="week" />
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend> 시간 관련 </legend>
+            <ul>
+                <li>
+                    <!-- type="time" : 시간을 선택할 수 있는 입력 필드를 정의 (hour, minute) -->
+                    <!-- 최소값, 최댓값 지정 가능 (min, max 속성) | 지정 시간 외 시간 입력은 가능하나, 유효성 검사에서 false 처리 -->
+                    <label for="time">time : </label>
+                    <input type="time" id="time" min="14:00" max="19:00" />
+                </li>
+            </ul>
+        </fieldset>
+
+        <input type="submit" value="제출하기" />
+    </form>
+</body>
+</html>

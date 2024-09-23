@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Form Input1</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Input Tag</legend>
+            <ul>
+                <li>
+                    <!-- label 태그 하위에 input 태그 넣기 -->
+                    <label>
+                        Text : 
+                        <input type="text" id="text" required />  <!-- required : 서버에 데이터 전송 시 필수 값 체크-->
+                    </label>
+                </li>
+                <li>
+                    <!-- for와 id속성을 사용하여 label 태그와 input 태그 연결 -->
+                    <!-- type="password" : 비밀번호를 입력할 수 있는 입력 필드를 정의, 데이터가 마스킹 처림됨 -->
+                    <label for="password">비밀번호 : </label>
+                    <input type="password" id="password" required />
+                </li>    
+                <li>
+                    <!-- type="email" : 이메일 유효성 검사 -->
+                    <label for="email">이메일 : </label>
+                    <input type="email" id="email" required />
+                </li>    
+                <li>
+                    <!-- type="tel" : tel - 전화번호를 받기위해 사용. (모바일 접근시 키패드가 다름) -->
+                    <label for="tel">전화번호 : </label>
+                    <!-- input[type=tel] 단축키 -->
+                    <input type="tel" id="tel" required /> 
+                </li>
+                <li>
+                    <!-- type="url" : url 유효성 검사-->
+                    <label for="url">url : </label>
+                    <input type="url" id="url" required /> 
+                </li>
+
+                <!-- number/range 최소값, 최댓값 지정 가능 (min, max 속성)-->
+                <li>
+                    <!-- type="number" : 숫자 증가/감소 버튼 활성화 -->
+                    <label for="number">number : </label>
+                    <input type="number" id="number" required min="5" max="10"/> 
+                </li>
+                <li>
+                    <!-- type="range" : 숫자 조절 컨트롤 바 활성화 -->
+                    <label for="range">range : </label>
+                    <input type="range" id="range" required />
+                </li>
+            </ul>
+        </fieldset>
+
+        <input type="submit" value="제출하기" />
+    </form>
+</body>
+</html>
