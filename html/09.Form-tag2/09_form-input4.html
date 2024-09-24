@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Form Input4</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Input Tag</legend>
+            <ul>
+                <li>
+                    <label for="text">Text</label>
+                    <!-- required : 서버에 데이터 전송 시 필수 입력값 체크-->
+                    <!-- value : 요소의 초깃값(value) 지정-->
+                    <!-- readonly : <input> 요소의 입력 필드가 읽기 전용임을 명시-->
+                    <input type="text" id="text" required value="안녕" readonly /> 
+                </li>
+                <li>
+                    <!-- type="email" : 이메일 유효성 검사 -->
+                    <label for="email">이메일 : </label>
+                    <!-- disabled : 해당 <input> 요소가 비활성화됨을 명시, 데이터가 서버로 전송 x-->
+                    <input type="email" id="email" required value="hello@naver.com" disabled/>
+                </li>    
+                <li>
+                    <!-- type="tel" : tel - 전화번호를 받기위해 사용. (모바일 접근시 키패드가 다름) -->
+                    <label for="tel">전화번호 : </label>
+                    <!-- autofocus : 페이지가 로드될 때 자동으로 커서가 해당 <input> 요소로 이동됨을 명시-->
+                    <input type="tel" id="tel" required autofocus /> 
+                </li>
+                <li>
+                    <!-- type="url" : url 유효성 검사-->
+                    <label for="url">url : </label>
+                    <!-- placeholder : <input> 요소에 입력될 값에 대한 짧은 힌트를 명시, 비어있는 입력 필드에 입력할 가이드 문구/설명을 삽입할 수 있다. -->
+                    <input type="url" id="url" required placeholder="url을 입력해주세요"/> 
+                </li>
+        </fieldset>
+        <input type="submit" value="제출하기" />
+    </form>
+</body>
+</html>

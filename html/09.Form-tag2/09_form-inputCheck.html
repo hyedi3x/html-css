@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Radio & Checkbox</title>
+</head>
+<body>
+    <form accept="">
+        <fieldset>
+            <legend>좋아하는 색상을 모두 선택해주세요.</legend>
+            <ul>
+                <li>
+                    <label for="red">빨강</label>
+                    <input type="checkbox" id="red" value="red" />
+                </li>
+                <li>
+                    <label for="orange">주황</label>
+                    <input type="checkbox" id="orange" value="orange" />
+                </li>
+                <li>
+                    <label for="yellow">노랑</label>
+                    <input type="checkbox" id="yellow" value="yellow" />
+                </li>
+                <li>
+                    <label for="green">초록</label>
+                    <input type="checkbox" id="green" value="green" />
+                </li>
+                <li>
+                    <label for="blue">파랑</label>
+                    <input type="checkbox" id="blue" value="blue" />
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>배송방법은?</legend>
+            <ul>
+                <!-- radio 버튼 기본적으로 체크 후, 해제 불가 name 속성으로 그룹핑 필요-->
+                <li>
+                    <label for="free">무료</label>
+                    <input type="radio" id="free" name="delivery" value="free" />
+                </li>
+                <li>
+                    <label for="pay">유료</label>
+                    <input type="radio" id="pay" name="delivery" value="pay" />
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
