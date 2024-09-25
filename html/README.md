@@ -9,3 +9,4 @@
 📃 08. 이미지 & 미디어 태그 간단 설명서 ([Img/Media-html](https://github.com/hyedi3x/html-css/blob/main/html/08.Img-Media/README.md)) <br>
 📃 09. Form 태그 간단 설명서 ([FormTag1-html](https://github.com/hyedi3x/html-css/blob/main/html/09.Form-tag/README.md)) <br>
 📃 09. Form 태그 2 간단 설명서 ([FormTag2-html](https://github.com/hyedi3x/html-css/blob/main/html/09.Form-tag2/README.md)) <br>
+📃 10. Head 태그 간단 설명서 ([HeadTAG-html](https://github.com/hyedi3x/html-css/blob/main/html/10.Head-tag/README.md)) <br>
