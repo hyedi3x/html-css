@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* color : 텍스트 컬러 변경 */
+        .p-tag {
+            color: gray;
+        }
+
+        /* text-decoration: none : 링크속성이 적용된 텍스트에 언더라인 없애기*/
+        .delete-line {
+            text-decoration: none;
+        }
+
+        /* background-color : 텍스트 뒤 컬러 지정 */
+        #dark {
+            background-color: darkblue;
+            color: white;
+        }
+
+        /* 클래스 재활용 */ 
+        .strong { 
+            color : yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- html 태그에 바로 style 속성 지정 -->
+    <h1 style="color: green">날씨</h1>
+
+    <!-- class 부여하여, style 태그(내부 스타일)에서 해당 클래스와 연결하여 style 속성 지정-->
+    <p class="p-tag">안녕하세요 오늘의 날씨는 맑음입니다.</p>
+    <hr>
+
+    <a class="delete-line" href="http://www.naver.com">네이버</a> <br>
+    <span>이름 : </span><span>hyedi3x</span>
+    <ul>
+        <li>맑음</li>
+        <li>구름</li>
+        <li>비</li>
+        <li>바람</li>
+        </ul>
+    <hr>
+
+    <p id="dark">
+        날씨는 수권의 해수와 상호작용을 하면서 나타나는 종합적인 <span class="strong">기상 상태</span>를 말한다. <br>
+        보통 짧은 기간 동안 나타난 상태를 말하며, 오랜 기간은 <span class="strong">기후</span>라는 용어를 사용한다. 
+    </p>
+</body>
+</html>
