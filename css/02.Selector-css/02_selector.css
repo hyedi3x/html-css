@@ -1,0 +1,33 @@
+/* Selector(선택자) : css 스타일을 적용할 html 요소, h1과 같이 중괄호 앞에 정의. */
+
+/* * (전체 선택자, Universal selector) : 모든 요소를 선택한다는 의미. */
+/* 브라우저 기본 스타일을 초기화할 때 자주 사용하는 선택자이다. */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Type 선택자 : 특정 태그 이름을 가진 모든 요소를 선택 */
+h2 {
+  color: slategray;
+}
+p {
+  color: darkgray;
+  font-weight: 300px;
+  text-align: center;
+}
+
+/* Class 선택자 : 지정한 class명을 가진 모든 요소를 선택하여 css sytle을 적용한다.  (동일 class로 여러 요소에 적용할 수 있다.)*/
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
+
+/* ID 선택자 : id 속성에 맞는 요소를 선택하여 css sytle을 적용한다. (고유한 하나의 태그에만 사용하길 권장한다..)*/
+#title {
+  font-size: 40px;
+  color: white;
+  background-color: slategray;
+}
