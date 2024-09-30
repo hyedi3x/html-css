@@ -1,0 +1,15 @@
+/* style.css File */
+h1 {
+    color: darkgray;
+}
+
+.article {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+/* 메모 내용 */
+
+/*
+메모내용이 여러 줄일 경우 
+*/
