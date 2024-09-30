@@ -1,0 +1,47 @@
+/*** 속성 선택자 study ***/
+
+/** 속성이 존재하는 모든 요소에 스타일 적용 **/
+/* h2 태그 내부의 class 속성이 존재하는 모든 요소에 스타일 적용 */
+h2[class] {
+  font-size: 50px;
+}
+/* a 태그 내부의 target 속성이 존재하는 모든 요소에 스타일 적용 */
+a[target] {
+  color : slategray;
+}
+/* placeholder 속성이 존재하는 모든 요소에 스타일 적용 */
+[placeholder] {
+  background-color: black;
+  color: white;
+}
+
+/** `=` : 속성값과 일치하는 요소(전체 문자열 입력)에 스타일 적용 **/
+/* h2 태그 내부의 class 속성값으로 naver가 존재하는 모든 요소에 스타일 적용 */
+h2[class='naver'] {
+  color: navy;
+}
+
+/** `*=` : 속성 값을 포함하는 요소(일부 문자열 입력 가능)에 스타일 적용 **/
+/* a 태그 내부의 href 속성값에 www 문자열 포함 시  스타일 적용 */
+a[href*='www'] {
+  text-decoration: none;  /* 링크 태그 텍스트 하단 줄 숨김 처리 */
+}
+
+/**  `^=` : 속성 값으로 끝나는 요소(일부 문자열 입력 가능)에 스타일 적용 **/
+/* h2 태그 내부의 class 속성값이 google로 시작하는 모든 요소에 스타일 적용 */
+h2[class^='google'] {
+  color: blue;
+}
+
+/** `~=`  : 속성에 포함된 단어 요소(문자열 중 일부 단어 포함이 아닌, 단어 그 자체)에 스타일 적용 **/
+/* a 태그 내부의 href 속성값이 daum.net으로 끝나는  문자열 포함 시  스타일 적용 */
+h2[class~='text'] {
+  color: red;
+  font-size: 30px;
+}
+
+/*** 그룹 선택자 study ***/
+/** 선택자를 쉼표(,)로 구분해 여러 선택자를 나열 **/
+h2, input { 
+  text-align: center;     /* 요소들을 가운데 정렬 */
+}
